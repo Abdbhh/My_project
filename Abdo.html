@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>Bruno Fernandes</title>
+    
+    <style>
+        /* 1. تنسيق وتوسيط الصفحة */
+        body {
+            background-color: #b4ebe4; /* خلفية رمادية فاتحة هادئة */
+            font-family: Arial, sans-serif;
+            padding: 20px 10px;
+            text-align: center; /* توسيط النصوص */
+            margin: 0;
+        }
+
+        /* حاوية لتحديد عرض المحتوى وجعله مريحاً للعين في المنتصف */
+        .container {
+            max-width: 600px;
+            margin: 0 auto; /* توسيط الحاوية في الشاشة */
+        }
+
+        h1, h2 {
+            color: #b30000; /* اللون الأحمر المميز */
+        }
+
+        /* 2. تصميم الصورة (وحركتها الطبيعية) */
+        img {
+            border-radius: 12px; /* حواف دائرية خفيفة */
+            cursor: pointer; /* إظهار اليد عند المرور لتنبيهك بإمكانية الضغط */
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* ظل طبيعي خفيف جداً */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* نعومة الحركة */
+            margin: 15px 0;
+            max-width: 100%; /* لكي لا تتعدى حدود الشاشة في الهواتف */
+        }
+
+        /* عند مرور الماوس فقط (حيوية بسيطة) */
+        img:hover {
+            transform: scale(1.03); /* تكبير غير ملحوظ جداً */
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+        }
+
+        /* 3. تأثير البروز والزوم عند الضغط (Zoomed) */
+        img.zoomed {
+            transform: scale(1.25); /* تكبير الصورة لتبرز */
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* ظل غامق يعطي إيحاءً بالارتفاع */
+            border: 3px solid #b30000; /* إطار أحمر أنيق للبروز */
+        }
+
+        /* 4. تنسيق القوائم لتبدو مرتبة ومنتصفة */
+        ul, ol {
+            display: inline-block; /* لكي تنضم لمنتصف الصفحة */
+            text-align: right; /* المحتوى من اليمين لليسار */
+            margin: 10px 0;
+            padding-right: 20px;
+            line-height: 1.6; /* مسافة مريحة بين الأسطر */
+        }
+
+        hr {
+            border: 0;
+            height: 1px;
+            background: #ddd;
+            margin: 25px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>برونو فيرنانديز (Bruno Fernandes)</h1>
+        
+        <!-- عند الضغط (onclick) يتم تفعيل أو إلغاء تأثير البروز 'zoomed' -->
+        <img src="abdo/Bruno.jpg.webp" alt="Bruno" width="230" onclick="this.classList.toggle('zoomed')">
+        <p style="font-size: 13px; color: #777;">(اضغط على الصورة لتكبيرها وبروزها 👆)</p>
+
+        <h2>معلومات عن اللاعب:</h2>
+        <p>لاعب كرة قدم برتغالي، يلعب في مركز خط الوسط الهجومي، ويعتبر القائد وصانع الألعاب الأساسي في فريقه.</p>
+
+        <hr>
+
+        <h2>مميزاته في الملعب:</h2>
+        <ul>
+            <li>رؤية ممتازة للملعب ودقة في التمرير.</li>
+            <li>تسديدات قوية من خارج منطقة الجزاء.</li>
+            <li>متخصص وبارع في تنفيذ ضربات الجزاء والركلات الحرة.</li>
+        </ul>
+
+        <hr>
+
+        <h2>الفرق التي لعب لها:</h2>
+        <ol>
+            <li>أودينيزي (إيطاليا)</li>
+            <li>سامبدوريا (إيطاليا)</li>
+            <li>سبورتينغ لشبونة (البرتغال)</li>
+            <li>مانشستر يونايتد (إنجلترا - حتى الآن)</li>
+        </ol>
+
+    </div>
+
+</body>
+</html>
